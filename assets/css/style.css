@@ -1,0 +1,219 @@
+/* ========== MEGA NAVIGATION CUSTOM STYLES ========== */
+:root {
+  --primary: #14b8a6;
+  --purple: #6d28d9;
+  --accent-red: #ef4444;
+  --text-dark: #1f2937;
+}
+
+.bg-teal {
+  background-color: var(--primary) !important;
+}
+
+/* पट्टी को और पतला और फॉन्ट छोटा करने के लिए */
+.custom-top-bar {
+  font-size: 11px !important;
+  /* डिफ़ॉल्ट small (14px) से छोटा करके 11px या 12px कर दें */
+  line-height: 1.2;
+  /* लाइन की हाइट कम करने के लिए */
+}
+
+/* इसके अंदर के आइकन्स का साइज भी टेक्स्ट के हिसाब से छोटा करने के लिए */
+.custom-top-bar i {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+/* कूपन कोड वाले बैज (Badge) को भी थोड़ा छोटा करने के लिए */
+.custom-top-bar .badge {
+  font-size: 10px;
+  padding: 2px 5px !important;
+}
+
+.header-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo-modern {
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-modern span {
+  color: var(--primary);
+}
+
+.search-wrapper {
+  border-radius: 50px;
+  background: #f8fafc;
+}
+
+.search-select {
+  max-width: 140px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.icon-item-modern {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.icon-item-modern i {
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+
+.icon-item-modern:hover i {
+  color: var(--primary);
+}
+
+.badge-modern {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: var(--accent-red);
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+}
+
+/* Flipkart Style Pure CSS Hover Mega Menu Logic */
+.nav-modern {
+  background: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.nav-link-modern {
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 0.8rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #334155;
+  transition: 0.2s;
+}
+
+.nav-link-modern:hover,
+.custom-active {
+  color: var(--primary) !important;
+}
+
+/* Pure CSS Dropdown/Mega Control */
+.has-mega {
+  position: static !important;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.mega-menu-content,
+.simple-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: white;
+  z-index: 1050;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid var(--primary);
+  padding: 1.5rem;
+}
+
+.mega-menu-content {
+  left: 0;
+  right: 0;
+}
+
+.simple-dropdown {
+  left: 0;
+  min-width: 220px;
+  padding: 0.5rem 0;
+}
+
+/* Hover Actions */
+.has-mega:hover .mega-menu-content,
+.has-dropdown:hover .simple-dropdown {
+  display: block;
+}
+
+/* Links List Inside Menus */
+.mega-col-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 4px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li a {
+  display: block;
+  padding: 5px 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu-list li a:hover {
+  color: var(--primary);
+  padding-left: 4px;
+}
+
+.simple-dropdown a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.simple-dropdown a:hover {
+  background: #f8fafc;
+  color: var(--primary);
+}
+
+/* Deal Pulse Animation */
+.deal-flash {
+  color: var(--accent-red) !important;
+  animation: flash 1.5s infinite;
+}
+
+@keyframes flash {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* .......................Home Page Custom Styles.........................  */
+.homeBar {
+  margin-top: -60px;
+  z-index: 999;
+  position: sticky;
+}
